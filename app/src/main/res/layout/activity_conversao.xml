@@ -12,7 +12,7 @@
         android:layout_width="109dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,35 +25,235 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spMoedaOrigem" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
+        android:id="@+id/text_origem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/spMoedaOrigem"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toEndOf="@+id/spMoedaOrigem"
-        app:layout_constraintTop_toTopOf="@+id/spMoedaOrigem">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextOrigem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Valor" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toTopOf="@+id/spMoedaOrigem"
+        app:layout_constraintVertical_bias="0.548" />
 
     <TextView
-        android:id="@+id/editTextDestino"
+        android:id="@+id/textMoedaDestino"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="0"
-        android:textAlignment="textEnd"
-        android:textSize="16sp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/spMoedaDestino"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toEndOf="@+id/spMoedaDestino"
-        app:layout_constraintTop_toTopOf="@+id/spMoedaDestino" />
+        app:layout_constraintTop_toTopOf="@+id/spMoedaDestino"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMoedaDestino">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_07"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textSize="24sp"
+                android:text="7"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_08"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textSize="24sp"
+                android:text="8"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_09"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textSize="24sp"
+                android:text="9"
+                app:cornerRadius="0dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_04"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textSize="24sp"
+                android:text="4"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_05"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="5"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_06"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="6"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_01"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="1"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_02"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="2"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_03"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="3"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_00"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="0"
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btn_virgula"
+                style="@style/Base.Theme.CalcFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text=","
+                android:textSize="24sp"
+                app:cornerRadius="0dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/spMoedaDestino">
+
+        <Button
+            android:id="@+id/btn_limpar"
+            style="@style/Base.Theme.CalcFinance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:text="AC" />
+
+        <ImageButton
+            android:id="@+id/btn_apagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            style="@style/MyButtonDeleteStyle"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

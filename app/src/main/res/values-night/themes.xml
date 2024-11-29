@@ -3,5 +3,10 @@
     <style name="Base.Theme.CalcFinance" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/primary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style>
+    <style name="MyButtonDeleteStyle" parent="Widget.MaterialComponents.TimePicker.ImageButton">
+        <item name="srcCompat">@drawable/ic_backspace_25</item>
     </style>
 </resources>

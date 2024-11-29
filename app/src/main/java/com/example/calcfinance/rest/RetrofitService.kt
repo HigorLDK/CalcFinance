@@ -5,11 +5,15 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface RetrofitService {
 
-    @GET("last/USD-BRL")
-    suspend fun getCoins(): CurrencyResponse
+    @GET("last/{moedaOrigem}-{moedaDestino}")
+    suspend fun getCoins(
+        @Path("moedaOrigem") moedaOrigem : String,
+        @Path("moedaDestino") moedaDestino : String,
+    ): CurrencyResponse
 //    Estes é um exemplo feito com Call mais não é mais recomendado usar
 //    fun getCoins(): Call<CurrencyResponse>
 

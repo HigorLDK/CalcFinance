@@ -3,6 +3,11 @@
     <style name="Base.Theme.CalcFinance" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/primary</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MyButtonDeleteStyle" parent="Widget.MaterialComponents.TimePicker.ImageButton">
+        <item name="srcCompat">@drawable/ic_backspace_24</item>
     </style>
 
     <style name="Theme.CalcFinance" parent="Base.Theme.CalcFinance" />

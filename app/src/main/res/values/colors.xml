@@ -5,4 +5,5 @@
     <color name="blue">#11ADC1</color>
     <color name="orange">#FF5100</color>
     <color name="primary">#11ADC1</color>
+    <color name="buttonTextColor">#FFFFFF</color>
 </resources>

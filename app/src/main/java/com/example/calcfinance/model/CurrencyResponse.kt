@@ -1,7 +1,12 @@
 package com.example.calcfinance.model
 
 data class CurrencyResponse(
-    val USDBRL: CurrencyData
+    val USDBRL: CurrencyData,
+    val EURBRL: CurrencyData,
+    val BRLUSD: CurrencyData,
+    val BRLEUR: CurrencyData,
+    val EURUSD: CurrencyData,
+    val USDEUR: CurrencyData
 
 
 )
